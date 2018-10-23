@@ -2,6 +2,11 @@
 <html>
 
 <head>
+	<style>
+		body {
+			background-image: url("ressources/background/crossword.png");
+		}
+	</style>
 	<!--Import Google Icon Font-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--Import materialize.css-->
@@ -16,7 +21,7 @@
 
 	<nav class="nav-wrapper">
 		<div class="container">
-			<a href="#!" class="brand-logo">Logo</a>
+			<a href="#!" class="brand-logo">SG</a>
 			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 			<ul class="right hide-on-med-and-down">
 				<li><a href="sass.html">Sass</a></li>
@@ -33,13 +38,71 @@
 		</div>
 	</nav>
 
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m1 l1"></div>
+			<!--coll with content-->
+			<div class="col s12 m10 l10">
+				<div>
+					<div class="row">
+						<div id="user-presentation" class="section scrollspy">
+							<div class="hide-on-small-only">
+								<div class="card horizontal hoverable z-depth-1">
+									<div class="col m4 valign-wrapper center-align">
+										<img class="circle responsive-img" src="ressources/images/photoCv.png">
+									</div>
+									<div class="col m8 card-stacked">
+										<div class="card-content">
+											<span class="card-title center-align">Simon GAYET</span>
+											<p>I am a very simple card. I am good at containing small bits of information.</p>
+										</div>
+										<div class="card-action">
+											<a href="#">This is a link</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card hide-on-med-and-up">
+								<div class="card-image">
+									<img src="ressources/images/photoCv.png">
+									<span class="card-title">Simon GAYET</span>
+								</div>
+								<div class="card-content">
+									<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I
+										require little markup to use effectively.</p>
+								</div>
+								<div class="card-action">
+									<a href="#">This is a link</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+			<!--coll with right navbar-->
+			<div class="col hide-on-small-only m1 l1 ">
+				<span class="flow-text">I am full-width on mobile col m2 l2</span>
+			</div>
+
+		</div>
+	</div>
+
+
 
 
 	<!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script>
-		$(document).ready(function () {  $(".button-collapse").sideNav();})
+		$(document).ready(function () {
+			$(".button-collapse").sideNav();
+		})
 	</script>
 </body>
 
