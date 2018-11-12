@@ -11,7 +11,6 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--Import materialize.css-->
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-
 	<!--website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -19,7 +18,7 @@
 <body>
 	<!-- NAVBAR -->
 
-	<nav class="nav-wrapper">
+	<nav class="nav-wrapper teal lighten-3">
 		<div class="container">
 			<a href="#!" class="brand-logo">SG</a>
 			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -46,22 +45,65 @@
 				<div>
 					<div class="row">
 						<div id="user-presentation" class="section scrollspy">
-							<div class="hide-on-small-only">
-								<div class="card horizontal hoverable z-depth-1">
-									<div class="col m4 valign-wrapper center-align">
-										<img class="circle responsive-img" src="ressources/images/photoCv.png">
-									</div>
-									<div class="col m8 card-stacked">
-										<div class="card-content">
-											<span class="card-title center-align">Simon GAYET</span>
-											<p>I am a very simple card. I am good at containing small bits of information.</p>
-										</div>
-										<div class="card-action">
-											<a href="#">This is a link</a>
+
+							<div class="card grey lighten-5 z-depth-1">
+								<div class="container">
+
+									<div class="col s12">
+										<div class="card-panel grey lighten-5">
+											<div class="row valign-wrapper">
+												<div class="col s5">
+													<img src="ressources/images/photoCv.png" alt="" class="circle responsive-img">
+													<!-- notice the "circle" class -->
+												</div>
+												<div class="col s7 offset-s2">
+													<h4 class="black-text">
+														Simon GAYET
+													</h4>
+													<span>
+														Diplomant Ingenieur Informatique et Gestion
+													</span>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
+
+								<div class="card-content">
+									<div class="col s6">
+										<p class="center-align">
+											<strong>Age : </strong>20 ans
+										</p>
+									</div>
+									<div class="col s6">
+										<p class="center-align">
+											<strong>Nationalité : </strong>Francais
+										</p>
+									</div>
+									<div>
+										<p class="center-align">
+											<strong>Adresse : </strong>4 rue Émile Bonnet, 34090 MONTPELLIER, FRANCE
+										</p>
+									</div>
+									<div>
+										<p class="center-align">
+											<strong>Mail : </strong>gayetsimon@gmail.com
+										</p>
+									</div>
+								</div>
+								<div class="card-action teal lighten-3">
+									<div class="col s6 m3 l2 offset-m3 offset-l4 center-align">
+										<a href="https://www.facebook.com/simon.gayet.7" class="btn-floating btn-small">
+											<i class="fab fa-facebook"></i>
+										</a>
+									</div>
+									<div class="col s6 m3 l2 center-align">
+
+									</div>
+
+								</div>
 							</div>
+
 
 							<div class="card hide-on-med-and-up">
 								<div class="card-image">
@@ -83,10 +125,8 @@
 
 
 
-
-
 			<!--coll with right navbar-->
-			<div class="col hide-on-small-only m1 l1 ">
+			<div class="col m1 l1 hide-on-small-only ">
 				<span class="flow-text">I am full-width on mobile col m2 l2</span>
 			</div>
 
