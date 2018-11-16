@@ -1,0 +1,178 @@
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!--font awesome 5.css-->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU'
+        crossorigin='anonymous'>
+    <!--website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="nav-wrapper teal lighten-2 ">
+            <div class="container">
+                <a href="#!" class="brand-logo white-text">SG</a>
+                <a href="#" data-target="mobile-links" class="sidenav-trigger"><i class="material-icons white-text">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="white-text" href="sass.html">Sass</a></li>
+                    <li><a class="white-text" href="badges.html">Components</a></li>
+                    <li><a class="white-text" href="collapsible.html">Javascript</a></li>
+                    <li><a class="white-text" href="mobile.html">Mobile</a></li>
+                    <li><a class="btn-floating btn-small teal">
+                            <i class="fab fa-facebook"></i> Sign in with facebook</a>
+                        </a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-links">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+        <div class="row teal lighten-3">
+            <br>
+            <div class="col s12 center-align">
+                <h2 class="white-text">
+                    <strong>Experience professionnel</strong>
+                </h2>
+                <br>
+            </div>
+        </div>
+
+        <br>
+        </div>
+    </header>
+
+
+    <div class="row">
+        <div class="col s12 m8 offset-m1 l8 offset-l2 ">
+
+            <div class="card z-depth-1">
+                <div class="card-content ">
+                    <span class="card-title">Card Title</span>
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                    <a href="#">This is a link</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="col m3 l1 hide-on-small-only ">
+            <div class="toc-wrapper pin-top" style="top: 0px;">
+                <ul class="section table-of-contents ">
+                    <li><a href="#presentation">Presentation</a></li>
+                    <li><a href="#formation">Formation</a></li>
+                    <li><a href="#competence">Comptence</a></li>
+                    <li><a href="#langues">Langues</a></li>
+                    <li><a href="#contact">Contacter</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <footer class="page-footer teal lighten-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">Made using Materialize framework.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                2018 Made by Gayet Simon
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(
+            function () {
+                $('.sidenav').sidenav();
+
+                $('.modal').modal();
+
+                $('.collapsible').collapsible();
+
+                $('.scrollspy').scrollSpy();
+
+                $('.tooltipped').tooltip();
+            }
+        );
+        $(document).ready(function () {
+            $('input#input_text, textarea#textarea2').characterCounter();
+        });
+
+
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+    </script>
+    <script>
+        setTimeout(function () {
+            var tocHeight = $('.toc-wrapper .table-of-contents').length
+                ? $('.toc-wrapper .table-of-contents').height()
+                : 0;
+            var footerOffset = $('body > footer').first().length
+                ? $('body > footer')
+                    .first()
+                    .offset().top
+                : 0;
+            var bottomOffset = footerOffset - tocHeight;
+
+            if ($('header').length) {
+                console.log('Nav pushpin', $('header').height());
+                $('.toc-wrapper').pushpin({
+                    top: $('header').height(),
+                    bottom: bottomOffset
+                });
+            } else if ($('#index-banner').length) {
+                $('.toc-wrapper').pushpin({
+                    top: $('#index-banner').height(),
+                    bottom: bottomOffset
+                });
+            } else {
+                $('.toc-wrapper').pushpin({
+                    top: 0,
+                    bottom: bottomOffset
+                });
+            }
+        }, 100);
+    </script>
+</body>
+
+</html>
