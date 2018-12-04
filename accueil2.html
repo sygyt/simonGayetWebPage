@@ -4,7 +4,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
     <!--font awesome 5.css-->
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU'
         crossorigin='anonymous'>
@@ -14,7 +14,7 @@
 
 <body>
     <!-- NAVBAR -->
-    
+    <div id="header">
         <nav class="nav-wrapper teal lighten-2 ">
             <div class="container">
                 <a href="#!" class="brand-logo white-text">SG</a>
@@ -39,8 +39,8 @@
         <div class="row teal lighten-3">
             <br>
             <div class="container valign-wrapper">
-                <div class="col s12 ">
-                    <img src="ressources/images/photoCv.png" alt="" class="circle responsive-img z-depth-1">
+                <div class="col s12 center-align">
+                    <img src="ressources/images/photoCv.png" alt="Photo de profil" width="300" height="300" class="circle responsive-img z-depth-1">
                     <!-- notice the "circle" class -->
                 </div>
                 <div class="col s12 ">
@@ -54,56 +54,59 @@
             </div>
             <br>
         </div>
-    
+    </div>
     <div class="row">
         <div class="col s12 m8 offset-m1 l8 offset-l2 ">
 
-
+            
             <div id="presentation" class="section scrollspy">
-                <h3 class="header light">Presentation</h3>
+                <h3 class="header light hide-on-small-only">Presentation</h3>
+                <h3 class="header light center-align hide-on-med-and-up">Presentation</h3>
                 <br>
                 <div>
-                    <div class="row">
-                        <div class="col s12 m6 l4">
-                            <span>
-                                <strong>Age : </strong>20 ans
-                            </span>
+                    <div class="card-panel">
+                        <div class="row">
+                            <div class="col s12 m6 l4">
+                                <span>
+                                    <strong>Age : </strong>20 ans
+                                </span>
+                            </div>
+                            <br class="hide-on-med-and-up">
+                            <br class="hide-on-med-and-up">
+                            <div class="col s12 m6 l4">
+                                <span>
+                                    <strong>Nationalité : </strong>Francais
+                                </span>
+                            </div>
                         </div>
-                        <br class="hide-on-med-and-up">
-                        <br class="hide-on-med-and-up">
-                        <div class="col s12 m6 l4">
-                            <span>
-                                <strong>Nationalité : </strong>Francais
-                            </span>
+                        <div class="row">
+                            <div class="col s12">
+                                <p>
+                                    <strong>Adresse : </strong>4 rue Émile Bonnet, 34090 MONTPELLIER, FRANCE
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12">
-                            <p>
-                                <strong>Adresse : </strong>4 rue Émile Bonnet, 34090 MONTPELLIER, FRANCE
-                            </p>
-                        </div>
-                    </div>
 
 
-                    <div class="row  hide-on-med-and-down">
-                        <button class="waves-effect waves-light btn-flat tooltipped" onclick="copyToClipboard('#phoneNumber')"
-                            data-position="bottom" data-tooltip="Copier vers le presse papier">
-                            <i class="material-icons left">smartphone</i><span type="text" id="phoneNumber">06
-                                21 66 44 41</span></button>
-                        <a href="#" class="waves-effect waves-teal btn-flat tooltipped" data-position="bottom"
-                            data-tooltip="contacter"><i class="material-icons left">mail</i>gayetsimon@gmail.com</a>
-                    </div>
-                    <div class="hide-on-large-only ">
-                        <div class="row ">
-                            <button class="waves-effect waves-teal btn-flat tooltipped" onclick="copyToClipboard('#phoneNumber')"
-                                data-position="top" data-tooltip="Copier vers le presse papier">
+                        <div class="row  hide-on-med-and-down">
+                            <button class="waves-effect waves-light btn-flat tooltipped" onclick="copyToClipboard('#phoneNumber')"
+                                data-position="bottom" data-tooltip="Copier vers le presse papier">
                                 <i class="material-icons left">smartphone</i><span type="text" id="phoneNumber">06
                                     21 66 44 41</span></button>
-                        </div>
-                        <div class="row ">
                             <a href="#" class="waves-effect waves-teal btn-flat tooltipped" data-position="bottom"
                                 data-tooltip="contacter"><i class="material-icons left">mail</i>gayetsimon@gmail.com</a>
+                        </div>
+                        <div class="hide-on-large-only ">
+                            <div class="row ">
+                                <button class="waves-effect waves-teal btn-flat tooltipped" onclick="copyToClipboard('#phoneNumber')"
+                                    data-position="top" data-tooltip="Copier vers le presse papier">
+                                    <i class="material-icons left">smartphone</i><span type="text" id="phoneNumber">06
+                                        21 66 44 41</span></button>
+                            </div>
+                            <div class="row ">
+                                <a href="#" class="waves-effect waves-teal btn-flat tooltipped" data-position="bottom"
+                                    data-tooltip="contacter"><i class="material-icons left">mail</i>gayetsimon@gmail.com</a>
+                            </div>
                         </div>
                     </div>
 
@@ -112,8 +115,8 @@
             <br>
             <div id="formation" class="section scrollspy">
                 <div>
-                    <h3 class="header light">Formation
-                    </h3>
+                    <h3 class="header light hide-on-small-only">Formation</h3>
+                    <h3 class="header light center-align hide-on-med-and-up">Formation</h3>
                     <div>
                         <ul>
                             <li>
@@ -210,7 +213,9 @@
             <br>
             <div id="competence" class="section scrollspy">
                 <div>
-                    <h3 class="header light">Compétence informatique
+                    <h3 class="header light hide-on-small-only">Compétence informatique
+                    </h3>
+                    <h3 class="header light center-align hide-on-med-and-up">Compétence informatique
                     </h3>
                     <br>
                     <div class="row">
@@ -383,7 +388,8 @@
             <br>
             <div id="langues" class="section scrollspy">
                 <div>
-                    <h3 class="header light">Langues</h3>
+                    <h3 class="header light hide-on-small-only">Langues</h3>
+                    <h3 class="header light center-align hide-on-med-and-up">Langues</h3>
                     <br>
                     <div class="row">
                         <div class="col s12 m6">
@@ -414,7 +420,9 @@
             <br>
             <div id="contact" class="section scrollspy">
                 <div>
-                    <h3 class="header light">Contacter</h3>
+                    <h3 class="header light hide-on-small-only">Contacter</h3>
+                    <h3 class="header light center-align hide-on-med-and-up">Contacter</h3>
+
                     <br>
                 </div>
                 <div class="row">
@@ -454,11 +462,11 @@
         <div class="col m3 l1 hide-on-small-only ">
             <div class="toc-wrapper pin-top" style="top: 0px;">
                 <ul class="section table-of-contents ">
-                    <li><a href="#presentation">Presentation</a></li>
-                    <li><a href="#formation">Formation</a></li>
-                    <li><a href="#competence">Comptence</a></li>
-                    <li><a href="#langues">Langues</a></li>
-                    <li><a href="#contact">Contacter</a></li>
+                    <li><a  href="#presentation">Presentation</a></li>
+                    <li><a  href="#formation">Formation</a></li>
+                    <li><a  href="#competence">Comptence</a></li>
+                    <li><a  href="#langues">Langues</a></li>
+                    <li><a  href="#contact">Contacter</a></li>
                 </ul>
             </div>
         </div>
@@ -523,7 +531,7 @@
             $temp.remove();
         }
     </script>
-   <script>
+    <script>
         setTimeout(function () {
             var tocHeight = $('.toc-wrapper .table-of-contents').length
                 ? $('.toc-wrapper .table-of-contents').height()
@@ -535,10 +543,10 @@
                 : 0;
             var bottomOffset = footerOffset - tocHeight;
 
-            if ($('header').length) {
-                console.log('Nav pushpin', $('header').height());
+            if ($('#header').length) {
+                console.log('Nav pushpin', $('#header').height());
                 $('.toc-wrapper').pushpin({
-                    top: $('header').height(),
+                    top: $('#header').height(),
                     bottom: bottomOffset
                 });
             } else if ($('#index-banner').length) {

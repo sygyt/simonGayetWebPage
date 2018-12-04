@@ -4,17 +4,25 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <!--Import my own css-->
+    <link type="text/css" rel="stylesheet" href="css/style2.css" />
     <!--font awesome 5.css-->
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU'
         crossorigin='anonymous'>
     <!--website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        strong { 
+            font-weight: bold;
+        }
+        
+        </style>
 </head>
 
 <body>
     <!-- NAVBAR -->
-    <header>
+    <div id="header">
         <nav class="nav-wrapper teal lighten-2 ">
             <div class="container">
                 <a href="#!" class="brand-logo white-text">SG</a>
@@ -39,32 +47,133 @@
         <div class="row teal lighten-3">
             <br>
             <div class="col s12 center-align">
-                <h2 class="white-text">
-                    <strong>Experience professionnel</strong>
-                </h2>
+                <h3 class="white-text">
+                    <strong>Expériences professionnelles</strong>
+                </h3>
                 <br>
             </div>
         </div>
 
         <br>
-        </div>
-    </header>
+    </div>
+
 
 
     <div class="row">
         <div class="col s12 m8 offset-m1 l8 offset-l2 ">
+            <div class="timeline-tl">
+                <div id="2018" class="section scrollspy">
+                    <div class="circle-tl "></div>
+                    <div class="container-tl left-tl">
+                        <div class="title-box">
+                            <div class="date-title">2018</div>
+                            <div class="subtitle">Stage de 6 semaines</div>
+                        </div>
+                        <div class="company-box">
+                            <div class="company-name">B2BSell</div>
+                            <div class="company-logo">
+                                <a href="https://www.b2bsell.com/" class="right-align"><img src="ressources/images/logoB2Bsell.png"
+                                        width="75" height="50" alt="b2bsell logo"></a>
+                            </div>
+                        </div>
+                        <div class="company-presentation">B2bsell dévellope des services de lead generation,
+                            téléventes, externalisation des ventes pour le b2b
+                        </div>
+                        <div class="content-tl">
+                            <strong>Pays :</strong> Irlande
+                        </div>
+                        <div class="content-tl">
+                            <strong>Ville :</strong> Dublin
+                        </div>
+                        <div class="content-tl">
+                            <strong>Tache :</strong> Dévellopement d'un intranet avec google sites et les outils google
+                            g suite.<br>Déploiment d'une base de donnée des contacts de l'entreprise.<br>Récuperation
+                            de donnée client en amont des campagnes de démarchage.
+                        </div>
+                        <div class="content-tl" style="padding-bottom: 20px">
+                            <strong>Acquis :</strong> Utilisation des outils cloud et devellopement web de google.<br>Fonctionnement
+                            du commerce anglosaxon et le fonctionnement du b2b.<br>
+                        </div>
 
-            <div class="card z-depth-1">
-                <div class="card-content ">
-                    <span class="card-title">Card Title</span>
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
+                    </div>
                 </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
+
+                <div id="2017" class="section scrollspy">
+                    <div class="circle-tl "></div>
+                    <div class="container-tl right-tl">
+                        <div class="title-box">
+                            <div class="date-title">2018</div>
+                            <div class="subtitle">Stage de 6 semaines</div>
+                        </div>
+                        <div class="company-box">
+                            <div class="company-name">B2BSell</div>
+                            <div class="company-logo">
+                                <a href="https://www.b2bsell.com/" class="right-align"><img src="ressources/images/logoB2Bsell.png"
+                                        width="75" height="50" alt="b2bsell logo"></a>
+                            </div>
+                        </div>
+                        <div class="company-presentation">B2bsell dévellope des services de lead generation,
+                            téléventes, externalisation des ventes pour le b2b
+                        </div>
+                        <div class="content-col" id="content2">
+                            <div class="content-tl">
+                                <strong>Pays :</strong> Irlande
+                            </div>
+                            <div class="content-tl">
+                                <strong>Ville :</strong> Dublin
+                            </div>
+                            <div class="content-tl">
+                                <strong>Tache :</strong> Dévellopement d'un intranet avec google sites et les outils
+                                google g suite.<br>Déploiment d'une base de donnée des contacts de l'entreprise.<br>Récuperation
+                                de donnée client en amont des campagnes de démarchage.
+                            </div>
+                        </div>
+                        <div class="content-tl" style="padding-bottom: 20px">
+                            <strong>Acquis :</strong> Utilisation des outils cloud et devellopement web de google.<br>Fonctionnement
+                            du commerce anglosaxon et le fonctionnement du b2b.<br>
+                        </div>
+                        <button class="collapsible-tl" id="2"><div class="more" id="more2">Voir plus</div><div class="less" id="less2">Voir moins</div></button>
+
+                    </div>
+                </div>
+                <div class="circle-tl"></div>
+                <div class="container-tl left-tl">
+                    <div class="content-tl">
+                        <h2>2015</h2>
+                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
+                            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim
+                            per, habeo iusto primis ea eam.</p>
+                    </div>
+                </div>
+                <div class="circle-tl"></div>
+                <div class="container-tl right-tl">
+                    <div class="content-tl">
+                        <h2>2012</h2>
+                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
+                            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim
+                            per, habeo iusto primis ea eam.</p>
+                    </div>
+                </div>
+                <div class="circle-tl"></div>
+                <div class="container-tl left-tl">
+                    <div class="content-tl">
+                        <h2>2011</h2>
+                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
+                            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim
+                            per, habeo iusto primis ea eam.</p>
+                    </div>
+                </div>
+                <div class="circle-tl"></div>
+                <div class="container-tl right-tl">
+                    <div class="content-tl">
+                        <h2>2007</h2>
+                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
+                            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim
+                            per, habeo iusto primis ea eam.</p>
+                    </div>
                 </div>
             </div>
+
 
 
         </div>
@@ -72,11 +181,11 @@
         <div class="col m3 l1 hide-on-small-only ">
             <div class="toc-wrapper pin-top" style="top: 0px;">
                 <ul class="section table-of-contents ">
-                    <li><a href="#presentation">Presentation</a></li>
-                    <li><a href="#formation">Formation</a></li>
-                    <li><a href="#competence">Comptence</a></li>
-                    <li><a href="#langues">Langues</a></li>
-                    <li><a href="#contact">Contacter</a></li>
+                    <li><a href="#2018">2018</a></li>
+                    <li><a href="#2017">2017</a></li>
+                    <li><a href="#2016">2016</a></li>
+                    <li><a href="#2015">2015</a></li>
+
                 </ul>
             </div>
         </div>
@@ -113,6 +222,28 @@
 
 
     <!--Import jQuery before materialize.js-->
+    <script>
+            var coll = document.getElementsByClassName("collapsible-tl");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active-tl");
+                var content = document.getElementById("content"+this.id);
+                var more = document.getElementById("more"+this.id);
+                var less = document.getElementById("less"+this.id);
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                  more.style.display="block";
+                  less.style.display="none";
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                  less.style.display="block";
+                  more.style.display="none";
+                } 
+              });
+            }
+    </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
@@ -154,10 +285,10 @@
                 : 0;
             var bottomOffset = footerOffset - tocHeight;
 
-            if ($('header').length) {
-                console.log('Nav pushpin', $('header').height());
+            if ($('#header').length) {
+                console.log('Nav pushpin', $('#header').height());
                 $('.toc-wrapper').pushpin({
-                    top: $('header').height(),
+                    top: $('#header').height(),
                     bottom: bottomOffset
                 });
             } else if ($('#index-banner').length) {
