@@ -12,6 +12,7 @@ body {
     margin: 0 auto;
 }
 
+
 /* The actual timeline (the vertical ruler) */
 .timeline-tl::after {
     content: '';
@@ -140,7 +141,9 @@ body {
 
 .company-name{
     display: inline-block;
-    font-size: 40px;
+    padding: 10px 0px 0px;
+    font-size: 35px;
+    line-height: 1.0;
     font-family: 'Lato', sans-serif;
 	color : #212121 ;
 }
@@ -162,7 +165,7 @@ body {
     background-color: white;;
     color: #757575 ;
     cursor: pointer;
-    padding: 18px;
+    padding: 10px 20px;
     width: 100%;
     border: none;
     text-align: center;
@@ -176,6 +179,7 @@ body {
     color: white;
     float: right;
     margin-left: 5px;
+    margin-bottom: 10px;
 }
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active-tl {
@@ -190,10 +194,16 @@ body {
 
 .more {
     display: block;
+    position: relative;
+    top: 10px ;
+    
 }
 
 .less {
     display: none;
+    position: relative;
+    top: 10px ;
+    
 }
 
 
