@@ -1,3 +1,9 @@
+<?php
+    require_once 'localisation.php';
+
+?>
+
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -427,23 +433,23 @@
                     <br>
                 </div>
                 <div class="row">
-                    <form class="col s12">
+                    <form class="col s12" action="sendMail.php" method="POST">
                         <div class="row">
                             <div class="input-field col s11 m6">
                                 <i class="material-icons prefix">email</i>
-                                <input id="email" type="email" class="validate">
+                                <input id="email" type="email" class="validate" name="email">
                                 <label for="email">Votre adresse email</label>
                                 <span class="helper-text" data-error="wrong" data-success="right"></span>
                             </div>
                             <div class="input-field col s10 offset-s1 m6">
-                                <input id="input_text" type="text" class="validate" data-length="50">
+                                <input id="input_text" type="text" class="validate" data-length="50" name="sujet">
                                 <label for="input_text">Sujet</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">mode_edit</i>
-                                <textarea id="textarea2" class="materialize-textarea"></textarea>
+                                <textarea id="textarea2" class="materialize-textarea" class="validate" data-length="500" name="message"></textarea>
                                 <label for="textarea2">Message</label>
                             </div>
                         </div>
